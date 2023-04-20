@@ -24,3 +24,19 @@ def index(request):
 
     return render(request, 'index.html', context)
 
+
+
+def project_detail(request, pk):
+    contex = {
+        'project': Projects.objects.get(id=pk),
+    }
+    return render(request, 'project_detail.html', contex)
+
+
+
+
+def blog_detail(request, pk):
+    contex = {
+        'blog': Blog.objects.get(id=pk),
+    }
+    return render(request, 'blog_detail.html', contex)
