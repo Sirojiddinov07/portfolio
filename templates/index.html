@@ -74,7 +74,7 @@
                     <h2 class="section-title mb-3">About Me</h2>
                     <p><strong>{{about.inform}}</strong>
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                  <a href="https://github.com/Sirojiddinov07/MYCV/blob/main/MyCv.lnk"> <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button></a>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -125,7 +125,7 @@
 
             </div><!-- end of row -->
             <br>
-            <button class="btn btn-warning"><a href="https://github.com/Sirojiddinov07"> <strong>for more ...</strong></a></button>
+            <button class="btn btn-warning"><a href="https://github.com/Sirojiddinov07?tab=repositories"> <strong>for more ...</strong></a></button>
 
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
@@ -188,13 +188,13 @@
                     <img width="300" height="400" src="{{i.img.url}}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="blog-card-body">
-                    <h5 class="blog-card-title">{{i.name}}t</h6>
+                    <h5 class="blog-card-title">{{i.name}}</h6>
 
                     <p class="blog-card-caption">
                         <a href="#">By: Admin</a>
 
                     </p>
-                        <p>{{i.inform}}</p>
+                        <p><strong>{{i.inform}}</strong></p>
 
                     <a href="{% url 'blog_detail' i.id %}" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
